@@ -1,0 +1,1652 @@
+{
+  "contractName": "ViewContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "createWallet",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getViewBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "addVoteBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "viewing1",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getVoteBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "addViewBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b61044d8061001e6000396000f300606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806311ebbf241461007d578063274aafcb146100925780632b8b333a146100bb5780636a23ef34146100e45780639469378e146100f9578063ada8eefc14610122575b600080fd5b341561008857600080fd5b61009061014b565b005b341561009d57600080fd5b6100a56101b9565b6040518082815260200191505060405180910390f35b34156100c657600080fd5b6100ce610202565b6040518082815260200191505060405180910390f35b34156100ef57600080fd5b6100f761029b565b005b341561010457600080fd5b61010c61033f565b6040518082815260200191505060405180910390f35b341561012d57600080fd5b610135610388565b6040518082815260200191505060405180910390f35b60408051908101604052806000815260200160008152506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010155905050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b6000600a6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101600082825401925050819055506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154905090565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001541115156102eb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000016000815480929190600190039190505550565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154905090565b6000600a6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825401925050819055506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549050905600a165627a7a72305820a2f6d2f6c187602df2c68b205f191db9c4151c014fea0555a587c28bb5353a720029",
+  "deployedBytecode": "0x606060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806311ebbf241461007d578063274aafcb146100925780632b8b333a146100bb5780636a23ef34146100e45780639469378e146100f9578063ada8eefc14610122575b600080fd5b341561008857600080fd5b61009061014b565b005b341561009d57600080fd5b6100a56101b9565b6040518082815260200191505060405180910390f35b34156100c657600080fd5b6100ce610202565b6040518082815260200191505060405180910390f35b34156100ef57600080fd5b6100f761029b565b005b341561010457600080fd5b61010c61033f565b6040518082815260200191505060405180910390f35b341561012d57600080fd5b610135610388565b6040518082815260200191505060405180910390f35b60408051908101604052806000815260200160008152506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010155905050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154905090565b6000600a6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101600082825401925050819055506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154905090565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001541115156102eb57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000016000815480929190600190039190505550565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154905090565b6000600a6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825401925050819055506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001549050905600a165627a7a72305820a2f6d2f6c187602df2c68b205f191db9c4151c014fea0555a587c28bb5353a720029",
+  "sourceMap": "57:886:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:886:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;204:76;;;;;;;;;;;;;;747:95;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;604:139;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;283:119;;;;;;;;;;;;;;846:95;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;459:141;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;204:76;263:12;;;;;;;;;271:1;263:12;;;;273:1;263:12;;;240:8;:20;249:10;240:20;;;;;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;204:76::o;747:95::-;787:4;805:8;:20;814:10;805:20;;;;;;;;;;;;;;;:32;;;798:39;;747:95;:::o;604:139::-;646:4;691:2;657:8;:20;666:10;657:20;;;;;;;;;;;;;;;:32;;;:36;;;;;;;;;;;706:8;:20;715:10;706:20;;;;;;;;;;;;;;;:32;;;699:39;;604:139;:::o;283:119::-;356:1;321:8;:20;330:10;321:20;;;;;;;;;;;;;;;:32;;;:36;313:45;;;;;;;;364:8;:20;373:10;364:20;;;;;;;;;;;;;;;:32;;;:34;;;;;;;;;;;;;;283:119::o;846:95::-;886:4;904:8;:20;913:10;904:20;;;;;;;;;;;;;;;:32;;;897:39;;846:95;:::o;459:141::-;501:4;548:2;512:8;:20;521:10;512:20;;;;;;;;;;;;;;;:32;;;:38;;;;;;;;;;;563:8;:20;572:10;563:20;;;;;;;;;;;;;;;:32;;;556:39;;459:141;:::o",
+  "source": "//TODO:\n//1. Optimize for gas\n\npragma solidity ^0.4.17;\n\ncontract ViewContract{\n\n    struct wallets{\n        uint viewBalance;\n        uint voteBalance;\n    }\n\n  mapping (address => wallets) balances;\n\n  function createWallet() public{\n    balances[msg.sender] = wallets(0,0);\n  }\n\n\tfunction viewing1() public{\n\t\trequire(balances[msg.sender].viewBalance > 0);\n    balances[msg.sender].viewBalance--;\n\t}\n\n// These 4 functions are solely for testing purposes\n  function addViewBalance() public returns (uint){\n    balances[msg.sender].viewBalance += 10;\n    return balances[msg.sender].viewBalance;\n  }\n\n  function addVoteBalance() public returns (uint){\n    balances[msg.sender].voteBalance+=10;\n    return balances[msg.sender].voteBalance;\n  }\n\n  function getViewBalance() view returns (uint){\n    return balances[msg.sender].viewBalance;\n  }\n\n  function getVoteBalance() view returns (uint){\n    return balances[msg.sender].voteBalance;\n  }\n}\n",
+  "sourcePath": "/Users/Howy/git/ethProjs/truffle/vopo/contracts/ViewContract.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/Howy/git/ethProjs/truffle/vopo/contracts/ViewContract.sol",
+      "exportedSymbols": {
+        "ViewContract": [
+          167
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "31:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            167
+          ],
+          "name": "ViewContract",
+          "scope": 168
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "ViewContract.wallets",
+              "name": "wallets",
+              "scope": 167,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "viewBalance",
+                  "scope": 63,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 59,
+                    "name": "ElementaryTypeName",
+                    "src": "109:4:1"
+                  }
+                ],
+                "id": 60,
+                "name": "VariableDeclaration",
+                "src": "109:16:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "voteBalance",
+                  "scope": 63,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 61,
+                    "name": "ElementaryTypeName",
+                    "src": "135:4:1"
+                  }
+                ],
+                "id": 62,
+                "name": "VariableDeclaration",
+                "src": "135:16:1"
+              }
+            ],
+            "id": 63,
+            "name": "StructDefinition",
+            "src": "85:73:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "balances",
+              "scope": 167,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct ViewContract.wallets storage ref)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct ViewContract.wallets storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 64,
+                    "name": "ElementaryTypeName",
+                    "src": "171:7:1"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "wallets",
+                      "referencedDeclaration": 63,
+                      "type": "struct ViewContract.wallets storage pointer"
+                    },
+                    "id": 65,
+                    "name": "UserDefinedTypeName",
+                    "src": "182:7:1"
+                  }
+                ],
+                "id": 66,
+                "name": "Mapping",
+                "src": "162:28:1"
+              }
+            ],
+            "id": 67,
+            "name": "VariableDeclaration",
+            "src": "162:37:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "createWallet",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 68,
+                "name": "ParameterList",
+                "src": "225:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 69,
+                "name": "ParameterList",
+                "src": "234:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct ViewContract.wallets storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct ViewContract.wallets storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                  "value": "balances"
+                                },
+                                "id": 70,
+                                "name": "Identifier",
+                                "src": "240:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 179,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 71,
+                                    "name": "Identifier",
+                                    "src": "249:3:1"
+                                  }
+                                ],
+                                "id": 72,
+                                "name": "MemberAccess",
+                                "src": "249:10:1"
+                              }
+                            ],
+                            "id": 73,
+                            "name": "IndexAccess",
+                            "src": "240:20:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct ViewContract.wallets memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_rational_0_by_1",
+                                      "typeString": "int_const 0"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 63,
+                                  "type": "type(struct ViewContract.wallets storage pointer)",
+                                  "value": "wallets"
+                                },
+                                "id": 74,
+                                "name": "Identifier",
+                                "src": "263:7:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 75,
+                                "name": "Literal",
+                                "src": "271:1:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 76,
+                                "name": "Literal",
+                                "src": "273:1:1"
+                              }
+                            ],
+                            "id": 77,
+                            "name": "FunctionCall",
+                            "src": "263:12:1"
+                          }
+                        ],
+                        "id": 78,
+                        "name": "Assignment",
+                        "src": "240:35:1"
+                      }
+                    ],
+                    "id": 79,
+                    "name": "ExpressionStatement",
+                    "src": "240:35:1"
+                  }
+                ],
+                "id": 80,
+                "name": "Block",
+                "src": "234:46:1"
+              }
+            ],
+            "id": 81,
+            "name": "FunctionDefinition",
+            "src": "204:76:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "viewing1",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 82,
+                "name": "ParameterList",
+                "src": "300:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 83,
+                "name": "ParameterList",
+                "src": "309:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 182,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 84,
+                            "name": "Identifier",
+                            "src": "313:7:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "viewBalance",
+                                  "referencedDeclaration": 60,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct ViewContract.wallets storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 67,
+                                          "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                          "value": "balances"
+                                        },
+                                        "id": 85,
+                                        "name": "Identifier",
+                                        "src": "321:8:1"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "sender",
+                                          "referencedDeclaration": null,
+                                          "type": "address"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 179,
+                                              "type": "msg",
+                                              "value": "msg"
+                                            },
+                                            "id": 86,
+                                            "name": "Identifier",
+                                            "src": "330:3:1"
+                                          }
+                                        ],
+                                        "id": 87,
+                                        "name": "MemberAccess",
+                                        "src": "330:10:1"
+                                      }
+                                    ],
+                                    "id": 88,
+                                    "name": "IndexAccess",
+                                    "src": "321:20:1"
+                                  }
+                                ],
+                                "id": 89,
+                                "name": "MemberAccess",
+                                "src": "321:32:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "30",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 0",
+                                  "value": "0"
+                                },
+                                "id": 90,
+                                "name": "Literal",
+                                "src": "356:1:1"
+                              }
+                            ],
+                            "id": 91,
+                            "name": "BinaryOperation",
+                            "src": "321:36:1"
+                          }
+                        ],
+                        "id": 92,
+                        "name": "FunctionCall",
+                        "src": "313:45:1"
+                      }
+                    ],
+                    "id": 93,
+                    "name": "ExpressionStatement",
+                    "src": "313:45:1"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "--",
+                          "prefix": false,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "viewBalance",
+                              "referencedDeclaration": 60,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct ViewContract.wallets storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 67,
+                                      "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                      "value": "balances"
+                                    },
+                                    "id": 94,
+                                    "name": "Identifier",
+                                    "src": "364:8:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "sender",
+                                      "referencedDeclaration": null,
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 179,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 95,
+                                        "name": "Identifier",
+                                        "src": "373:3:1"
+                                      }
+                                    ],
+                                    "id": 96,
+                                    "name": "MemberAccess",
+                                    "src": "373:10:1"
+                                  }
+                                ],
+                                "id": 97,
+                                "name": "IndexAccess",
+                                "src": "364:20:1"
+                              }
+                            ],
+                            "id": 98,
+                            "name": "MemberAccess",
+                            "src": "364:32:1"
+                          }
+                        ],
+                        "id": 99,
+                        "name": "UnaryOperation",
+                        "src": "364:34:1"
+                      }
+                    ],
+                    "id": 100,
+                    "name": "ExpressionStatement",
+                    "src": "364:34:1"
+                  }
+                ],
+                "id": 101,
+                "name": "Block",
+                "src": "309:93:1"
+              }
+            ],
+            "id": 102,
+            "name": "FunctionDefinition",
+            "src": "283:119:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "addViewBalance",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 103,
+                "name": "ParameterList",
+                "src": "482:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 122,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 104,
+                        "name": "ElementaryTypeName",
+                        "src": "501:4:1"
+                      }
+                    ],
+                    "id": 105,
+                    "name": "VariableDeclaration",
+                    "src": "501:4:1"
+                  }
+                ],
+                "id": 106,
+                "name": "ParameterList",
+                "src": "500:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "viewBalance",
+                              "referencedDeclaration": 60,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct ViewContract.wallets storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 67,
+                                      "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                      "value": "balances"
+                                    },
+                                    "id": 107,
+                                    "name": "Identifier",
+                                    "src": "512:8:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "sender",
+                                      "referencedDeclaration": null,
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 179,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 108,
+                                        "name": "Identifier",
+                                        "src": "521:3:1"
+                                      }
+                                    ],
+                                    "id": 109,
+                                    "name": "MemberAccess",
+                                    "src": "521:10:1"
+                                  }
+                                ],
+                                "id": 110,
+                                "name": "IndexAccess",
+                                "src": "512:20:1"
+                              }
+                            ],
+                            "id": 111,
+                            "name": "MemberAccess",
+                            "src": "512:32:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3130",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 10",
+                              "value": "10"
+                            },
+                            "id": 112,
+                            "name": "Literal",
+                            "src": "548:2:1"
+                          }
+                        ],
+                        "id": 113,
+                        "name": "Assignment",
+                        "src": "512:38:1"
+                      }
+                    ],
+                    "id": 114,
+                    "name": "ExpressionStatement",
+                    "src": "512:38:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 106
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "viewBalance",
+                          "referencedDeclaration": 60,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct ViewContract.wallets storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                  "value": "balances"
+                                },
+                                "id": 115,
+                                "name": "Identifier",
+                                "src": "563:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 179,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 116,
+                                    "name": "Identifier",
+                                    "src": "572:3:1"
+                                  }
+                                ],
+                                "id": 117,
+                                "name": "MemberAccess",
+                                "src": "572:10:1"
+                              }
+                            ],
+                            "id": 118,
+                            "name": "IndexAccess",
+                            "src": "563:20:1"
+                          }
+                        ],
+                        "id": 119,
+                        "name": "MemberAccess",
+                        "src": "563:32:1"
+                      }
+                    ],
+                    "id": 120,
+                    "name": "Return",
+                    "src": "556:39:1"
+                  }
+                ],
+                "id": 121,
+                "name": "Block",
+                "src": "506:94:1"
+              }
+            ],
+            "id": 122,
+            "name": "FunctionDefinition",
+            "src": "459:141:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "addVoteBalance",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 123,
+                "name": "ParameterList",
+                "src": "627:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 142,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 124,
+                        "name": "ElementaryTypeName",
+                        "src": "646:4:1"
+                      }
+                    ],
+                    "id": 125,
+                    "name": "VariableDeclaration",
+                    "src": "646:4:1"
+                  }
+                ],
+                "id": 126,
+                "name": "ParameterList",
+                "src": "645:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "voteBalance",
+                              "referencedDeclaration": 62,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct ViewContract.wallets storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 67,
+                                      "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                      "value": "balances"
+                                    },
+                                    "id": 127,
+                                    "name": "Identifier",
+                                    "src": "657:8:1"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "sender",
+                                      "referencedDeclaration": null,
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 179,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 128,
+                                        "name": "Identifier",
+                                        "src": "666:3:1"
+                                      }
+                                    ],
+                                    "id": 129,
+                                    "name": "MemberAccess",
+                                    "src": "666:10:1"
+                                  }
+                                ],
+                                "id": 130,
+                                "name": "IndexAccess",
+                                "src": "657:20:1"
+                              }
+                            ],
+                            "id": 131,
+                            "name": "MemberAccess",
+                            "src": "657:32:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "3130",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 10",
+                              "value": "10"
+                            },
+                            "id": 132,
+                            "name": "Literal",
+                            "src": "691:2:1"
+                          }
+                        ],
+                        "id": 133,
+                        "name": "Assignment",
+                        "src": "657:36:1"
+                      }
+                    ],
+                    "id": 134,
+                    "name": "ExpressionStatement",
+                    "src": "657:36:1"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 126
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "voteBalance",
+                          "referencedDeclaration": 62,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct ViewContract.wallets storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                  "value": "balances"
+                                },
+                                "id": 135,
+                                "name": "Identifier",
+                                "src": "706:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 179,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 136,
+                                    "name": "Identifier",
+                                    "src": "715:3:1"
+                                  }
+                                ],
+                                "id": 137,
+                                "name": "MemberAccess",
+                                "src": "715:10:1"
+                              }
+                            ],
+                            "id": 138,
+                            "name": "IndexAccess",
+                            "src": "706:20:1"
+                          }
+                        ],
+                        "id": 139,
+                        "name": "MemberAccess",
+                        "src": "706:32:1"
+                      }
+                    ],
+                    "id": 140,
+                    "name": "Return",
+                    "src": "699:39:1"
+                  }
+                ],
+                "id": 141,
+                "name": "Block",
+                "src": "651:92:1"
+              }
+            ],
+            "id": 142,
+            "name": "FunctionDefinition",
+            "src": "604:139:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getViewBalance",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 143,
+                "name": "ParameterList",
+                "src": "770:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 154,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 144,
+                        "name": "ElementaryTypeName",
+                        "src": "787:4:1"
+                      }
+                    ],
+                    "id": 145,
+                    "name": "VariableDeclaration",
+                    "src": "787:4:1"
+                  }
+                ],
+                "id": 146,
+                "name": "ParameterList",
+                "src": "786:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 146
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "viewBalance",
+                          "referencedDeclaration": 60,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct ViewContract.wallets storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                  "value": "balances"
+                                },
+                                "id": 147,
+                                "name": "Identifier",
+                                "src": "805:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 179,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 148,
+                                    "name": "Identifier",
+                                    "src": "814:3:1"
+                                  }
+                                ],
+                                "id": 149,
+                                "name": "MemberAccess",
+                                "src": "814:10:1"
+                              }
+                            ],
+                            "id": 150,
+                            "name": "IndexAccess",
+                            "src": "805:20:1"
+                          }
+                        ],
+                        "id": 151,
+                        "name": "MemberAccess",
+                        "src": "805:32:1"
+                      }
+                    ],
+                    "id": 152,
+                    "name": "Return",
+                    "src": "798:39:1"
+                  }
+                ],
+                "id": 153,
+                "name": "Block",
+                "src": "792:50:1"
+              }
+            ],
+            "id": 154,
+            "name": "FunctionDefinition",
+            "src": "747:95:1"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "getVoteBalance",
+              "payable": false,
+              "scope": 167,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 155,
+                "name": "ParameterList",
+                "src": "869:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 166,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 156,
+                        "name": "ElementaryTypeName",
+                        "src": "886:4:1"
+                      }
+                    ],
+                    "id": 157,
+                    "name": "VariableDeclaration",
+                    "src": "886:4:1"
+                  }
+                ],
+                "id": 158,
+                "name": "ParameterList",
+                "src": "885:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 158
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "voteBalance",
+                          "referencedDeclaration": 62,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct ViewContract.wallets storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 67,
+                                  "type": "mapping(address => struct ViewContract.wallets storage ref)",
+                                  "value": "balances"
+                                },
+                                "id": 159,
+                                "name": "Identifier",
+                                "src": "904:8:1"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 179,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 160,
+                                    "name": "Identifier",
+                                    "src": "913:3:1"
+                                  }
+                                ],
+                                "id": 161,
+                                "name": "MemberAccess",
+                                "src": "913:10:1"
+                              }
+                            ],
+                            "id": 162,
+                            "name": "IndexAccess",
+                            "src": "904:20:1"
+                          }
+                        ],
+                        "id": 163,
+                        "name": "MemberAccess",
+                        "src": "904:32:1"
+                      }
+                    ],
+                    "id": 164,
+                    "name": "Return",
+                    "src": "897:39:1"
+                  }
+                ],
+                "id": 165,
+                "name": "Block",
+                "src": "891:50:1"
+              }
+            ],
+            "id": 166,
+            "name": "FunctionDefinition",
+            "src": "846:95:1"
+          }
+        ],
+        "id": 167,
+        "name": "ContractDefinition",
+        "src": "57:886:1"
+      }
+    ],
+    "id": 168,
+    "name": "SourceUnit",
+    "src": "31:913:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x0f1dcae13e04c445108091abf5babfc622624391"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-18T05:46:28.080Z"
+}
